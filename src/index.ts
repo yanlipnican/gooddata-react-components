@@ -61,6 +61,7 @@ import * as HeaderPredicateFactory from "./factory/HeaderPredicateFactory";
 import * as MappingHeader from "./interfaces/MappingHeader";
 import { ICoreComponents } from "./interfaces/CoreComponents";
 import { BucketExecutor } from "./execution/BucketExecutor";
+import PivotTableNew from "./components/core/pivotTableNew/pivotTableNew";
 
 /**
  * CoreComponents
@@ -126,6 +127,7 @@ export {
     PropTypes,
     RuntimeError,
     PivotTable,
+    PivotTableNew,
     Table,
     VisEvents,
     Visualization,

@@ -8,10 +8,10 @@ import { IDataSourceProviderInjectedProps } from "../components/afm/DataSourcePr
 import { IPivotTableProps } from "../components/core/PivotTable";
 
 export interface ICoreComponents {
-    BaseChart: React.ComponentClass<IBaseChartProps>;
-    Headline: React.ComponentClass<ICommonVisualizationProps & IDataSourceProviderInjectedProps>;
-    Table: React.ComponentClass<ITableProps & IDataSourceProviderInjectedProps>;
-    PivotTable: React.ComponentClass<IPivotTableProps>;
-    ScatterPlot: React.ComponentClass<IChartProps>;
-    FunnelChart: React.ComponentClass<IChartProps>;
+    BaseChart: React.ComponentType<IBaseChartProps>;
+    Headline: React.ComponentType<ICommonVisualizationProps & IDataSourceProviderInjectedProps>;
+    Table: React.ComponentType<ITableProps & IDataSourceProviderInjectedProps>;
+    PivotTable: React.ComponentType<IPivotTableProps>;
+    ScatterPlot: React.ComponentType<IChartProps>;
+    FunnelChart: React.ComponentType<IChartProps>;
 }

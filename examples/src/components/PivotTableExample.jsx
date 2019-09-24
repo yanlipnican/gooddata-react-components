@@ -1,6 +1,6 @@
 // (C) 2007-2019 GoodData Corporation
 import React, { Component } from "react";
-import { PivotTable, Model } from "@gooddata/react-components";
+import { PivotTableNew, Model } from "@gooddata/react-components";
 import PropTypes from "prop-types";
 
 import "@gooddata/react-components/styles/css/main.css";
@@ -59,7 +59,7 @@ export class PivotTableExample extends Component {
 
         return (
             <div style={{ height: 300 }} className={className}>
-                <PivotTable
+                <PivotTableNew
                     projectId={hasError ? "incorrectProjectId" : projectId}
                     measures={measures}
                     rows={attributes}

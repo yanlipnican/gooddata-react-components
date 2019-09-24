@@ -93,9 +93,9 @@ export const commonDefaultProps: Partial<ICommonVisualizationProps & IDataSource
 export function visualizationLoadingHOC<
     T extends ICommonVisualizationProps & IDataSourceProviderInjectedProps
 >(
-    InnerComponent: React.ComponentClass<T & ILoadingInjectedProps>,
+    InnerComponent: React.ComponentType<T & ILoadingInjectedProps>,
     autoExecuteDataSource: boolean = true,
-): React.ComponentClass<T> {
+): React.ComponentType<T> {
     class LoadingHOCWrapped extends React.Component<T & ILoadingInjectedProps, IVisualizationLoadingState> {
         public static defaultProps: Partial<T & ILoadingInjectedProps> = InnerComponent.defaultProps;
 
